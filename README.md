@@ -43,9 +43,9 @@ NAT Manager centralizes all port forwarding configuration into a single YAML fil
 ### Before NAT Manager
 ```bash
 # For each service, run 6+ commands:
-sudo iptables -t nat -A PREROUTING -d 138.201.80.48 -p tcp --dport 3306 \
+sudo iptables -t nat -A PREROUTING -d 198.51.100.50 -p tcp --dport 3306 \
   -s 192.168.1.100 -j DNAT --to-destination 10.10.20.110:3306
-sudo iptables -t nat -A PREROUTING -d 138.201.80.48 -p tcp --dport 3306 \
+sudo iptables -t nat -A PREROUTING -d 198.51.100.50 -p tcp --dport 3306 \
   -j REJECT --reject-with tcp-reset
 sudo iptables -t nat -A POSTROUTING -d 10.10.20.110 -p tcp --dport 3306 \
   -j MASQUERADE
@@ -342,19 +342,19 @@ Output displays all active rules and configured services.
 
 ```bash
 # From authorized IP address
-telnet 138.201.80.48 3306
+telnet 198.51.100.50 3306
 # Expected: Connected ✓
 
 # From unauthorized IP address
-telnet 138.201.80.48 3306
+telnet 198.51.100.50 3306
 # Expected: Connection refused ✓
 ```
 
 ### Test Web Services
 
 ```bash
-curl -I http://138.201.80.48
-curl -I https://138.201.80.48
+curl -I http://198.51.100.50
+curl -I https://198.51.100.50
 ```
 
 ---
