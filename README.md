@@ -331,7 +331,6 @@ sudo nat-manager persist
 
 ---
 
-
 ## 📚 Şu Şekilde Başla
 
 ### Step 1: Kurulum (1 min)
