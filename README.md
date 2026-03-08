@@ -15,12 +15,13 @@ A configuration-driven firewall management solution for Proxmox environments tha
 ```bash
 $ sudo nat-manager apply
 ═══════════════════════════════════════════════════════════
-NAT Kuralları Uygulanıyor
+Applying NAT Rules
 ═══════════════════════════════════════════════════════════
 ✓ Service: mysql (Port: 3306 → 3306)
 ✓ Service: rabbitmq (Port: 5672 → 5672)
 ✓ Service: postgresql (Port: 5432 → 5432)
-✓ Toplam 9 kural uygulandı!
+✓ Total 9 rules applied
+```
 
 ## 🎯 Problem Statement
 
