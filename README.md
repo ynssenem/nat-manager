@@ -1,8 +1,26 @@
 # NAT Manager - Proxmox NAT Configuration Tool
 
+![GitHub release](https://img.shields.io/github/v/release/ynssenem/nat-manager)
+![GitHub](https://img.shields.io/github/license/ynssenem/nat-manager)
+![Bash](https://img.shields.io/badge/bash-5.0+-blue)
+![Proxmox](https://img.shields.io/badge/Proxmox-6.0+-green)
+![Status](https://img.shields.io/badge/status-active-success)
+
 A configuration-driven firewall management solution for Proxmox environments that eliminates the complexity of manually managing multiple port forwarding rules.
 
 ---
+
+## Demo
+
+```bash
+$ sudo nat-manager apply
+═══════════════════════════════════════════════════════════
+NAT Kuralları Uygulanıyor
+═══════════════════════════════════════════════════════════
+✓ Service: mysql (Port: 3306 → 3306)
+✓ Service: rabbitmq (Port: 5672 → 5672)
+✓ Service: postgresql (Port: 5432 → 5432)
+✓ Toplam 9 kural uygulandı!
 
 ## 🎯 Problem Statement
 

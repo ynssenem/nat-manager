@@ -1,0 +1,21 @@
+# Logs
+*.log
+/var/log/
+
+# Backups
+/var/backups/
+
+# Config (optional - senin seçimine bağlı)
+# /etc/nat-config.yaml
+
+# System files
+.DS_Store
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+/tmp/
